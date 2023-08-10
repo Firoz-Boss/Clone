@@ -440,7 +440,7 @@ class Main:
 			Public()
 		if Ali in ["3", "03"]:
 			os.system("python FILE-DUMP.py")
-	    if Ali in ["4", " 04"]:
+	    if Ali in ["4", "04"]:
 		    os.system("python Huntter404.py")
 		if Ali in ["5", "05"]:
 			self.old()
