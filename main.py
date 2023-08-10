@@ -15,23 +15,23 @@ numX = []
 #_______________________LOGO_____________________
 def logo():
     cmd("clear")
-    print(f"""(white)    (white)""")
-    print(f"(white)--------------------------------------------------------------------------")
-    print(f" 		  [ (green) + (white)] Tool Name : Firoz Ahmed")
-    print(f" 		  [ (green) + (white)] Tool Version : 0.0.1")
-    print(f" 		  [ (green) + (white)] Creator Whatsapp : +8801871528249")
-    print(f"(white)--------------------------------------------------------------------------")
+    print(f"""{white}    {white}""")
+    print(f"{white}--------------------------------------------------------------------------")
+    print(f" 		  [ {green} + {white}] Tool Name : Firoz Ahmed")
+    print(f" 		  [  {green} + {white}] Tool Version : 0.0.1")
+    print(f" 		  [  {green} + {white}] Creator Whatsapp : +8801871528249")
+    print(f"{white}--------------------------------------------------------------------------")
 def random_number():
     logo()
-    print(f" (red) Input valid BD sim code")
-    print(f" (green) Example : (white) 018, 017, 013, 019, 016, 015")
+    print(f" {red} Input valid BD sim code")
+    print(f" {green} Example : {white} 018, 017, 013, 019, 016, 015")
     try:
         code = int(number)
     except:
-        print(f" (red) WRONG INPUT, TRY AGAIN")
+        print(f" {red} WRONG INPUT, TRY AGAIN")
         main()
     try:
-        number = int(input(f" (green) [+] Cloning Limit"))
+        number = int(input(f" {green} [+] Cloning Limit"))
     except:
         limit = 5000
 
@@ -44,13 +44,13 @@ def random_number():
 #_________________Main Menu__________________
 def main():
     logo()
-    print(f" (green) 01 (white) Random Clone")
-    print(f" (green) 01 (white)  ")
-    print(f" (green) 01 (white)  ")
-    print(f" (green) 01 (white)  ")
-    print(f" (green) 01 (white)  ")
-    print(f" (white)--------------------------------------------------------------------------")
-    mch = input(f" [(green)>>(white)] Choose an option: ")
+    print(f" {green} 01 {white} Random Clone")
+    print(f" {green} 01 {white}  ")
+    print(f" {green} 01 {white}  ")
+    print(f" {green} 01 {white}  ")
+    print(f" {green} 01 {white}  ")
+    print(f" {white}--------------------------------------------------------------------------")
+    mch = input(f" [{green}>>{white}] Choose an option: ")
     if mch in ["1", "01"]:
         random_number()
     else:
