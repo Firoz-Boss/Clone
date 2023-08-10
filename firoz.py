@@ -441,7 +441,7 @@ class Main:
 		if Ali in ["2", "02"]:
 			Public()
 		if Ali in ["3", "03"]:
-			os.system("python Dump.py")
+			os.system("python FILE-DUMP.py")
 		if Ali in ["4", "04"]:
 			self.old()
 		if Ali in ["5", "05"]:
