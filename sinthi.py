@@ -229,7 +229,7 @@ def Firoz():
     print(" LIMIT = 3000 , 5000,  15000 , 20000 ")
   #print("\033[1;92m〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠〠\033[0m")
     
-    os.system('xdg-open https://www.facebook.com/firoz.ahmed5678)
+    os.system('xdg-open https://www.facebook.com/firoz.ahmed5678')
     limit=int(input(" \033[1;33m</> CHOOSE LIMIT : "))
     for nmbr in range(limit):
         nmp = ''.join(random.choice(string.digits) for _ in range(8))
