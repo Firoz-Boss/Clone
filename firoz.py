@@ -441,7 +441,7 @@ class Main:
 		if Ali in ["3", "03"]:
 			os.system("python FILE-DUMP.py")
 		if Ali in ["4", "04"]:
-			os.system("python Huntter404.py")
+			os.system("python random.py")
 		if Ali in ["5", "05"]:
 			self.old()
 		if Ali in ["6", "06"]:
