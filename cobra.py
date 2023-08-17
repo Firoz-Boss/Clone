@@ -194,7 +194,7 @@ def banner():
 \033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
 def login():
 	banner()
-	COBRAj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Create File\n\x1b[1;97[3] Random Clone\n\x1b[1;95[4] Contact With Admin\n\033[0;97m[E] \033[0;91mEXIT ')
+	COBRAj('\033[1;96m[1] File Cloning\n\x1b[1;92m[2] Create File\n\x1b[1;97m[3] Random Clone\n\x1b[1;95m[4] Contact With Admin\n\033[0;97m[E] \033[0;91mEXIT ')
 	COBRAj('\033[0;97m===============================================')
 	COBRA= input('\x1b[1;92m[+] CHOOSE: ');time.sleep(0.01)
 	if COBRA in ['m']:
