@@ -537,11 +537,9 @@ def Subscraption():
 		Main()
 	else:
 		os.system("clear")
-		print(logo)
 		print("\t \033[1;32m First Get Approval\033[1;37m ")
 		time.sleep(1)
 		os.system("clear")
-		print(logo)
 		print ("")
 		print(" Your Key is Not Approved ")
 		print("")
