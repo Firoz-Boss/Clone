@@ -209,7 +209,7 @@ def login():
 	elif COBRA in ['i','0i']:
 		result()
 	elif COBRA in ['2','02']:
-		os.system("python FILE-DUMP.py")
+		os.system("python AKING.py")
 	elif COBRA in ['3','03']:
 		os.system("python sinthi.py")
 	elif COBRA in ['4','04']:
