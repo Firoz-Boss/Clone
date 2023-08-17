@@ -156,8 +156,8 @@ while attemps < 12345677901:
     password = input(' \033[0;93mEnter Password: ')
 
     if username == 'FIROZ' and password == 'Jaan':
-    	os.system('espeak -a 300 " You, have, logged, in, successfully,  brother,"')
         print(' \033[0;92mLog in successfully brother.')
+        os.system('espeak -a 300 " You, have, logged, in, successfully,  brother,"')
         break
     else:
         print(' Incorrect Pass Please Check And Try Again ')
