@@ -431,12 +431,12 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m LOGIN \n\x1b[1;97m 1. METHOD[1]  ')
-	os.system('espeak -a 300 " choose, method, 1"')
+	print('\x1b[1;92m LOGIN \n\x1b[1;97m [1] METHOD(1) \n\x1b[1:94m [2] METHOD(2) ')
+	os.system('espeak -a 300 " choose a option as your wish"')
 	hc = input(' CHOOSE: ')
 	if hc in ['1','01']:
 		method.append('mobile')
-	elif hc in ['9','09']:
+	elif hc in ['2','02']:
 		method.append('mbasic')
 	else:
 		method.append('mobile')
