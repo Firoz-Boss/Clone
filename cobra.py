@@ -160,12 +160,13 @@ while attemps < 12345677901:
     username = input(' \033[0;92mEnter Username: ')
     password = input(' \033[0;93mEnter Password: ')
 
-    if username == 'FIROZ' and password == 'Jaan':
+    if username == 'FIROZ' and password == 'mubin':
         print(' \033[0;92mLog in successfully brother.')
         os.system('espeak -a 300 " You, have, logged, in, successfully,  brother,"')
         break
     else:
         print(' Incorrect Pass Please Check And Try Again ')
+        os.system('espeak -a 300 " password, incorrect,"')
         attemps += 1
         continue
 os.system('clear')
@@ -190,12 +191,12 @@ def banner():
 ║\33[1;95m        [ WORKS ON ONLY MOBILE DATA ]        \033[1;97m║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 \033[0;94m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[1;33m 
-╠══[Author                   : \33[1;38mFIROZ AHMED ]\33[1;38m  ║\033[1;31m 
-╠══[Facebook                 : Firoz Ahmed ]  ║  \033[1;97m  
-╠══[Github                   : \33[1;38mFiroz-Boss ]   ║\33[1;34m   
-╠══[Whatsapp                 : 01871528249 ]  ║\33[1;35m 
-╠══[TOOLS                    : Paid  ]        ║ \33[1;32m   
-╠══[VERSION                  : 0.1 ]          ║\033[1;35m 
+╠══[Author                   : \33[1;38mFIROZ AHMED \33[1;38m   ║\033[1;31m 
+╠══[Facebook                 : Firoz Ahmed    ║  \033[1;97m  
+╠══[Github                   : \33[1;38mFiroz-Boss     ║\33[1;34m   
+╠══[Whatsapp                 : 01871528249    ║\33[1;35m 
+╠══[TOOLS                    : Paid           ║ \33[1;32m   
+╠══[VERSION                  : 0.1            ║\033[1;35m 
 \033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
 def login():
 	banner()
@@ -379,7 +380,7 @@ def crack_file():
 	banner()
 	os.system('espeak -a 300 " your file name"')
 	print('\033[1;32m[ Put File Example:  /sdcard/BOSS.txt  Etc...]')
-	o = input('\x1b[1;97m [+] INPut FILE NAME : ')
+	o = input('\x1b[1;97m [+] INPUT FILE NAME : ')
 	print('')
 	try:lin = open(o).read().splitlines()
 	except:
@@ -412,7 +413,7 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m LOGIN \n\x1b[1;97m METHOD[1]  ')
+	print('\x1b[1;92m LOGIN \n\x1b[1;97m 1. METHOD[1]  ')
 	os.system('espeak -a 300 " choose, method, 1"')
 	hc = input(' CHOOSE: ')
 	if hc in ['1','01']:
@@ -427,10 +428,10 @@ def setting():
 def passwrd():
 	os.system('clear')
 	banner()
-	print(f"\033[97;1m[\033[92;1m+\033[97;1m]\033[1;92m USER NAME\033[1;91m :\033[1;96m "+NameX)
-	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTOTAL ID′S :\033[0;97m '+str(len(id)))
+	print(f"\033[97;1m[\033[92;1m+\033[97;1m]\033[1;93m USER NAME\033[1;96m :\033[1;91m "+NameX)
+	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;93mTOTAL ID′S[1;96m :\033[0;97m '+str(len(id)))
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mCloning Speed Super Fast")
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;95mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	COBRAj(f'\033[0;97m===============================================')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
@@ -503,7 +504,7 @@ def crack(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#COBRA-BOSS
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}•COBRA-Cp] {idf} • {pw}')     
-				os.system('espeak -a 300 " C,  P"')
+				os.system('espeak -a 300 " MUBIN, CP, ID"')
 				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -515,7 +516,7 @@ def crack(idf,pwv):
 				#COBRA-BOSS
 				print(f'\r\033[0;92m[{time.strftime("%H:%M")}•COBRA-Ok😘] {idf} • {pw}\n\033[0;93m[🇧🇩]= COOKIES • \033[0;92m{kuki} ')
 				print('\033[0;94m==============================================================')
-				os.system('espeak -a 300 " COBRA,  Ok,  id"')
+				os.system('espeak -a 300 " FIROZ,  Ok,  ID"')
 				open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
 				cek_apk(session,coki)
 				break
@@ -549,7 +550,7 @@ def Subscraption():
 		name = input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Name : ")
 		input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Press Enter To Send Key")
 		time.sleep(3.5)
-		tks = 'Assalamu%20Alaikum-!💚,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+FIROZ+''+key1
+		tks = 'Assalamu%20Alaikum-!💚,%20Please%20Approve%20My%20Key%20To%20Premium%20%20Jajhakumullah%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+FIROZ+''+key1
 		os.system('am start https://wa.me/+8801871528249?text=' + tks)
 		Subscraption() 
 Subscraption() 
