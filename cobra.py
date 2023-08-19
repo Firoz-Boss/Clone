@@ -209,12 +209,12 @@ def banner():
 ║\33[1;95m      [ WORKS ON WIFI AND MOBILE DATA ]      \033[1;97m║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 \033[1;97m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[0;36m 
-╠══[Author                   : FIROZ AHMED \033[0;36m   ║\033[1;33m 
-╠══[Facebook                 : Firoz Ahmed   \033[1;33m ║  \033[1;92m  
-╠══[Github                   : Firoz-Boss   \033[1;92m  ║\033[1;95m   
-╠══[Whatsapp                 : 01871528249  \033[1;95m  ║\033[1;96m 
-╠══[TOOLS                    : Paid         \033[1;96m  ║ \033[1;31m   
-╠══[VERSION                  : 0.1           \033[1;31m ║\033[1;36m 
+╠══•>Author                  : FIROZ AHMED \033[0;36m   ║\033[1;33m 
+╠══•>Facebook                : Firoz Ahmed   \033[1;33m ║  \033[1;92m  
+╠══•>Github                  : Firoz-Boss   \033[1;92m  ║\033[1;95m   
+╠══•>Whatsapp                : 01871528249  \033[1;95m  ║\033[1;96m 
+╠══•>TOOLS                   : Paid         \033[1;96m  ║ \033[1;31m   
+╠══•>VERSION                 : 0.1           \033[1;31m ║\033[1;36m 
 \033[1;97m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m""")
 def login():
 	banner()
@@ -228,7 +228,7 @@ def login():
 	elif COBRA in ['i','0i']:
 		result()
 	elif COBRA in ['2','02']:
-		os.system("python AKING.py")
+		os.system("python FILE.py")
 	elif COBRA in ['3','03']:
 		os.system("python sinthi.py")
 	elif COBRA in ['4','04']:
