@@ -156,7 +156,7 @@ while attemps < 12345677901:
     username = input(' \033[0;92mEnter Username: ')
     password = input(' \033[0;93mEnter Password: ')
 
-    if username == 'FIROZ' and password == 'mubin':
+    if username == 'FIROZ' and password == 'MUBIN':
         print(' \033[0;92mLog in successfully brother.')
         os.system('espeak -a 300 " You have logged in successfully  brother,"')
         break
@@ -427,8 +427,8 @@ def passwrd():
 	banner()
 	print(f"\033[97;1m[\033[92;1m+\033[97;1m]\033[1;93m USER NAME\033[1;96m :\033[1;97m "+NameX)
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;93mTOTAL ID′S\033[1;96m :\033[0;97m '+str(len(id)))
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;36mCloning Speed Ultra Super Fast")
-	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;36mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[1;96mCloning Speed Ultra Super Fast")
+	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[1;96mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	COBRAj(f'\033[0;97m===============================================')
 	with tred(max_workers=30) as pool:
 		for yuzong in id2:
