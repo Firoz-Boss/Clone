@@ -49,6 +49,7 @@ ua = ["Dalvik/2.1.0 (Linux; U; Android 12; SM-A215U Build/SP1A.210812.016)",]
 ua = ["Dalvik/2.1.0 (Linux; U; Android 12; SM-F900F Build/SP2A.220305.013)",]
 ua = ["Dalvik/2.1.0 (Linux; U; Android 10; Realme XT Build/QD4A.200905.003)",]
 ua = ["Dalvik/2.1.0 (Linux; U; Android 12; RMX3360 Build/RKQ1.210503.001)",]
+ua = open('bbnew.txt','r').read().splitlines()
 ugen2=[]
 ugen=[]
 cokbrut=[]
@@ -431,7 +432,7 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m LOGIN \n\x1b[1;97m [1] METHOD(1) \n\x1b[1:94m [2] METHOD(2) ')
+	print('\x1b[1;92m LOGIN \n\x1b[1;97m [1] METHOD(1) \n\x1b[1;94m [2] METHOD(2) ')
 	os.system('espeak -a 300 " choose a option as your wish"')
 	hc = input(' CHOOSE: ')
 	if hc in ['1','01']:
