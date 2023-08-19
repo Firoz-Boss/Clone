@@ -529,26 +529,26 @@ if __name__=='__main__':
 	try:os.system('touch prox.txt')
 	except:pass
 
-#def Subscraption():
-	#key1=open('/data/data/com.termux/files/usr/bin/.mrFIROZ -cov', 'r').read()
-	#r1=requests.get("https://raw.githubusercontent.com/Firoz-Boss/F-1/main/Approval.txt").text
-	#if key1 in r1:
-		#os.system('clear')
-		#login()
-#	else:
-#		os.system("clear")
-#		banner()
-#		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m FREE USER NOT COME INBOX")
-#		time.sleep(0.0010)
-#		print("\033[97;1m[\033[92;1m•\033[97;1m]\x1b[38;5;208m COBRA-BOSS, TOOLS Daily Update")
-#		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m 7 DAYS 300 Tk")
-#		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m 15 DAYS 500 Tk")
-#		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Key  :\033[0;93m "+ak+FIROZ+key1)
-#		name = input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Name : ")
-#		input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Press Enter To Send Key")
-#		time.sleep(1.5)
-#		tks = 'Assalamu%20Alaikum-!💚,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+FIROZ+''+key1
-#		os.system('am start https://wa.me/+8801871528249?text=' + tks)
-	#	Subscraption() 
-#Subscraption() 
+def Subscraption():
+	key1=open('/data/data/com.termux/files/usr/bin/.mrFIROZ -cov', 'r').read()
+	r1=requests.get("https://raw.githubusercontent.com/Firoz-Boss/F-1/main/Approval.txt").text
+	if key1 in r1:
+		os.system('clear')
+		login()
+	else:
+		os.system("clear")
+		banner()
+		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m FREE USER NOT COME INBOX")
+		time.sleep(0.0010)
+		print("\033[97;1m[\033[92;1m•\033[97;1m]\x1b[38;5;208m COBRA-BOSS, TOOLS Daily Update")
+		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m 7 DAYS 300 Tk")
+		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m 15 DAYS 500 Tk")
+		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Key  :\033[0;93m "+ak+FIROZ+key1)
+		name = input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Your Name : ")
+		input("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m Press Enter To Send Key")
+		time.sleep(1.5)
+		tks = 'Assalamu%20Alaikum-!💚,%20Please%20Approved%20My%20Key%20To%20Premium%20%20Thanks%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20Name%20:%20'+name+'%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20My%20%20Key%20%20:%20'+ak+FIROZ+''+key1
+		os.system('am start https://wa.me/+8801871528249?text=' + tks)
+		Subscraption() 
+Subscraption() 
 login()
