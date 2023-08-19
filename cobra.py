@@ -530,13 +530,14 @@ if __name__=='__main__':
 	except:pass
 
 def Subscraption():
-	key1=open('/storage/emulated/0/android8.txt', 'r').read()
+	key1=open('/data/data/com.termux/files/usr/bin/.mrFIROZ -cov', 'r').read()
 	r1=requests.get("https://raw.githubusercontent.com/Firoz-Boss/F-1/main/Approval.txt").text
 	if key1 in r1:
 		os.system('clear')
 		login()
 	else:
 		os.system("clear")
+		banner()
 		print("\033[97;1m[\033[92;1m•\033[97;1m]\33[0;92m FREE USER NOT COME INBOX")
 		time.sleep(0.0010)
 		print("\033[97;1m[\033[92;1m•\033[97;1m]\x1b[38;5;208m COBRA-BOSS, TOOLS Daily Update")
