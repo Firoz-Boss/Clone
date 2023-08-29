@@ -153,11 +153,11 @@ def back():
 attemps = 0
 
 while attemps < 12345677901:
+	os.system('espeak -a 300 " tools, username, "')
     username = input(' \033[0;92mEnter Username: ')
-    os.system('espeak -a 300 " tools, username, "')
-    password = input(' \033[0;93mEnter Password: ')
     os.system('espeak -a 300 " tools, password, "')
-
+    password = input(' \033[0;93mEnter Password: ')
+    
     if username == 'FIROZ' and password == 'MUBIN':
         print(' \033[0;92mLog in successfully brother.')
         os.system('espeak -a 300 " You have logged in successfully  brother,"')
