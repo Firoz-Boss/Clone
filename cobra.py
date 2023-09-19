@@ -197,6 +197,7 @@ while attempts < max_attempts:
     else:
         print(' Incorrect Pass Please Check And Try Again ')
         os.system('espeak -a 300 " password, incorrect,"')
+        os.system('clear')
         attemps += 1
         continue
         
