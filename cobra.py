@@ -199,9 +199,7 @@ while attempts < max_attempts:
         os.system('espeak -a 300 " password, incorrect,"')
         attemps += 1
         continue
-os.system('clear')
-#------------------[ MAIN ]-----------------#
-
+        
 os.system('espeak -a 300 " Your   Real  Name"')
 NameX =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m:\33[1;32m')
 os.system('espeak -a 300 " Welcome,   to,  FIROZ,  AHMED,  Tools"')
