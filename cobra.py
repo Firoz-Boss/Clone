@@ -201,10 +201,20 @@ while attempts < max_attempts:
         attemps += 1
         continue
         
-os.system('espeak -a 300 " Your   Real  Name"')
-NameX =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m:\33[1;32m')
-os.system('espeak -a 300 " Welcome, mr, 'NameX'"')
+import os
+
+# Use espeak to speak a message
+os.system('espeak -a 300 "Your Real Name"')
+
+# Get the user's name
+NameX = input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m:\33[1;32m')
+
+# Use espeak to welcome the user
+os.system(f'espeak -a 300 "Welcome, Mr. {NameX}"')
+
+# Open a website (in this case, Facebook)
 os.system('xdg-open https://www.facebook.com/firoz.ahmed5678')
+
 def banner():
 	os.system("clear")
 	print (f"""
