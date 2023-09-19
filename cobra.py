@@ -470,7 +470,8 @@ def passwrd():
 	banner()
 	print(f"\033[97;1m[\033[92;1m+\033[97;1m]\033[1;93m USER NAME\033[1;96m :\033[1;97m "+NameX)
 	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;93mTOTAL ID′S\033[1;96m :\033[0;97m '+str(len(id)))
-	print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;93mStarting Time \033[1;96m :\033[1;92m ' + time.strftime("%H:%M"))
+	current_time = time.strftime("%I:%M %p")  # Get current time in AM/PM format
+	print(f'\033[97;1m[\033[92;1m+\033[97;1m] \033[1;94mStarting Time \033[1;96m : \033[1;92m {current_time}')
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[1;96mCloning Speed Ultra Super Fast")
 	print("\033[97;1m[\033[92;1m+\033[97;1m] \033[1;96mTURN ON/OFF FLIGHT MODE IN EVERY 5 MIN")
 	COBRAj(f'\033[0;97m===============================================')
