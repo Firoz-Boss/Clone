@@ -153,7 +153,7 @@ def back():
 attemps = 0
 
 import os
-
+os.system('clear')
 attempts = 0
 max_attempts = 12345677901  # Set your desired maximum number of attempts
 
