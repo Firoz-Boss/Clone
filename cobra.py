@@ -152,9 +152,13 @@ def back():
 
 attemps = 0
 
+import os
+
 attempts = 0
-while attempts < 12345677901:
-	print (f"""
+max_attempts = 12345677901  # Set your desired maximum number of attempts
+
+while attempts < max_attempts:
+    print(f"""
 \033[0;36m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
    \033[1;93m██████╗\033[1;97m ██████╗\033[1;92m ██████╗\033[1;94m ██████╗  \033[1;91m█████╗ 
   \033[1;93m██╔════╝\033[1;97m██╔═══██╗\033[1;92m██╔══██╗\033[1;94m██╔══██╗\033[1;91m██╔══██╗
@@ -179,6 +183,12 @@ while attempts < 12345677901:
     os.system('espeak -a 300 " tools, password, "')
     password = input(' \033[0;93mEnter Password: ')
     attempts += 1
+
+    # Add an exit condition (e.g., after a certain number of attempts)
+    if attempts >= max_attempts:
+        print("Maximum attempts reached. Exiting.")
+        break
+
 
     if username == 'FIROZ' and password == 'MUBIN':
         print(' \033[0;92mLog in successfully.')
